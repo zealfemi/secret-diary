@@ -1,0 +1,66 @@
+html {
+  background: url(/img/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  background: none;
+}
+
+#homeContainer {
+  padding-top: 150px !important;
+  min-width: 150px;
+  max-width: 400px;
+}
+
+#result {
+  display: none;
+}
+
+#diary {
+  width: 100%;
+  min-height: 200px;
+  height: 520px;
+  max-height: 1000px;
+}
+
+textarea {
+  resize: none;
+}
+
+textarea::-webkit-scrollbar {
+  width: 1em;
+}
+
+textarea::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+.hidden {
+  display: none;
+}
+
+.hide-form {
+  cursor: pointer;
+}
+
+.form-control::placeholder {
+  color: gray;
+  opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+  color: gray;
+}
+
+.form-control::-ms-input-placeholder {
+  color: gray;
+}
