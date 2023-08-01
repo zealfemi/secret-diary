@@ -1,6 +1,6 @@
 <?php
 
-    $db = mysqli_connect("sql211.byethost9.com", "b9_34311591", "vitaminc1", "b9_34311591_users");
+    $db = mysqli_connect("HOSTNAME", "USERNAME", "PASSWORD", "DATABASE TABLE");
 
     if (mysqli_connect_error()) {
                         
