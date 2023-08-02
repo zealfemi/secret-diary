@@ -29,6 +29,8 @@
     } else {
         header("Location: index.php");
         unset($_SESSION);
+        unset($_SESSION['id']);
+        
         setcookie("id", "", time() - 60 * 60 * 365);
         $_COOKIE['id'] = ""; 
     }
