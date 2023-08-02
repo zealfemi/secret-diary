@@ -5,11 +5,11 @@
     $diary = "";
     $user = "";
 
-    if (array_key_exists("id", $_COOKIE) && $_COOOKIE["id"]) {
+    if (array_key_exists("id", $_COOKIE) AND $_COOKIE["id"]) {
         $_SESSION["id"] = $_COOKIE["id"];
     }
 
-    if (array_key_exists("id", $_SESSION) && $_SESSION["id"]) {
+    if (array_key_exists("id", $_SESSION) AND $_SESSION["id"]) {
 
         include("db-connection.php");
         $id = $_SESSION["id"];

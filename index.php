@@ -6,12 +6,11 @@
 
     if (array_key_exists("logout", $_GET)) {
         unset($_SESSION);
-        $_SESSION['id'] = null;
 
-        setcookie("id", "", time() - 60 * 60 * 365);
+        setcookie("id", "", time() - 60 * 60);
         $_COOKIE['id'] = ""; 
 
-    } else if ((array_key_exists("id", $_SESSION["id"]) AND $_SESSION['id']) OR (array_key_exists("id", $_COOKIE) AND $_COOKIE['id'])) {
+    } else if ((array_key_exists("id", $_SESSION) AND $_SESSION['id']) OR (array_key_exists("id", $_COOKIE) AND $_COOKIE['id'])) {
         header("Location: diary.php");
     }
 
